@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <style>
+    .box{
+      margin-bottom:15px;
+    }
+    label{
+      display:block;
+      float:left;
+      width:140px;
+    }
+  </style>
+</head>
+<body>
+  <h2>問い合わせ内容</h2>
+  <form action="/check.html" method="POST">
+    <div class="box">
+      <label class="username" for="username">お名前</label>
+      <input id="username" type="text" name="name">
+    </div>
+
+    <div class="box">
+      <label class="email" for="email">メールアドレス</label>
+      <input id="email" type="email" name="email">
+    </div>
+
+    <div class="box">
+      <label class="text" for="text">お問い合わせ内容</label>
+      <textarea id="text"></textarea>
+    </div>
+
+    <div class="btn">
+      <button type="submit">送信する</button>
+    </div>
+
+  </form>
+  </body>
+  </html>
